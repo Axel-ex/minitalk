@@ -6,7 +6,7 @@
 /*   By: achabrer <achabrer@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/08 17:12:59 by axelchab          #+#    #+#             */
-/*   Updated: 2023/10/11 16:22:39 by achabrer         ###   ########.fr       */
+/*   Updated: 2023/10/11 16:27:17 by achabrer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@
  * significant bit is reached.
  * 
  * @param c char to send.
- * @param server_pid 
+ * @param server_pid process ID of ./server
  */
 void	send_bin(char c, pid_t server_pid);
 
@@ -45,7 +45,7 @@ void	send_bin(char c, pid_t server_pid);
  * is append to the str. if c is a null byte, we reached the end 
  * of the str so we print it.
  * 
- * @param signum signal received
+ * @param signum signal ID
  */
 void	read_bites(int signum);
 /**
@@ -67,6 +67,11 @@ void	ft_install_handler(void);
  * @return char* string  
  */
 char	*ft_strappend(char *str, char c);
-void	ft_error(char *str);
+/**
+ * @brief print error message and exit the program.
+ * 
+ * @param erorr_msg message to print
+ */
+void	ft_error(char *error_msg);
 
 #endif
