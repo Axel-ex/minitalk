@@ -6,6 +6,8 @@ CCFLAGS = 	-Wall -Werror -Wextra
 
 LIBFT 	=	libft.a
 
+INCLUDES = includes/
+
 RED =  \033[38;5;196m
 GREEN = \033[38;5;47m
 YELLOW = \033[38;5;226m
@@ -15,12 +17,12 @@ RESET = \033[0m
 all: $(CLIENT) $(SERVER)
 
 $(CLIENT): $(LIBFT)
-	@cc $(CCFLAGS) client.c $(LIBFT) -o $(CLIENT)
-	@echo "$(GREEN)$(CLIENT) compilation done$(RESET)"
+	@cc $(CCFLAGS) -I $(INCLUDES) src/client.c $(LIBFT) -o $(CLIENT)
+	@echo "[$(GREEN)compiling$(RESET)]: $(CLIENT)"
 
 $(SERVER): $(LIBFT)
-	@cc $(CCFLAGS) server.c util.c $(LIBFT) -o $(SERVER)
-	@echo "$(GREEN)$(SERVER) compilation done$(RESET)"
+	@cc $(CCFLAGS) -I $(INCLUDES) src/server.c src/util.c $(LIBFT) -o $(SERVER)
+	@echo "[$(GREEN)compiling$(RESET)]: $(SERVER)"
 
 $(LIBFT):
 	@make -C Libft
