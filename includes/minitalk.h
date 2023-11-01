@@ -6,7 +6,7 @@
 /*   By: achabrer <achabrer@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/08 17:12:59 by axelchab          #+#    #+#             */
-/*   Updated: 2023/10/11 16:43:45 by achabrer         ###   ########.fr       */
+/*   Updated: 2023/11/01 14:49:13 by achabrer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <execinfo.h>
-# include "../Libft/libft.h"
+# include "../Libft/srcs_libft/libft.h"
 
 // =============================================================================
 // CLIENT.C
