@@ -3,7 +3,7 @@ This project implements a data exchange program using Unix signals. the client u
 
 ## Usage
 <img src="demo.gif" width="100%"/>
-First ``git clone`` and ``cd`` the makefile will create a server and a client executable file. first run the server: 
+First ``git clone`` and ``cd`` into the repository. then ``make``. the makefile will create a server and a client executable file. first run the server: 
 
     ./server
 
