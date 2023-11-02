@@ -3,10 +3,10 @@ This project implements a data exchange program using Unix signals. the client u
 
 ## Usage
 <img src="demo.gif" width="100%"/>
-the makefile will create a server and a client executable file. first run the server: 
+First ``git clone`` and ``cd`` the makefile will create a server and a client executable file. first run the server: 
 
     ./server
 
-The server will display it's process ID. Open another terminal window and run:
+The server will display it's process ID (**PID**). Open another terminal window and run:
 
     ./client <server_pid> <message_str>
